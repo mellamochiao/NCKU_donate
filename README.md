@@ -2,12 +2,12 @@
 
 ## Project Overview
 
-While National Cheng Kung University publishes its donation records online, the official webpage is presented in a long, list, making it difficult for users to browse or analyze the data effectively.
+While National Cheng Kung University publishes its donation records online, the official webpage is presented in a long list, making it difficult for users to browse or analyze the data effectively.
 
 To solve this, I built:
 
--  **A web scraper** that extracts all donation records from the NCKU donation site
--  **A terminal-based interactive CLI** that lets users easily explore and analyze donation data
+-  **A web scraper that extracts all donation records from the NCKU donation site**
+-  **A terminal-based interactive CLI that lets users easily explore and analyze donation data**
 
 ## Features
 
@@ -44,6 +44,7 @@ scrapy crawl donate_spider -O data/2025donations.csv
 ```bash
 python3 donation_analysis.py
 ```
-
+CLI analyzer demonstration
+<img width="349" alt="Image" src="https://github.com/user-attachments/assets/8f211492-c0ab-46e6-9c0e-84cb3f84696a" />
 
 
