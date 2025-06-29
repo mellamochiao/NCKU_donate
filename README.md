@@ -45,6 +45,8 @@ scrapy crawl donate_spider -O data/2025donations.csv
 python3 donation_analysis.py
 ```
 CLI analyzer demonstration
+
+
 <img width="349" alt="Image" src="https://github.com/user-attachments/assets/8f211492-c0ab-46e6-9c0e-84cb3f84696a" />
 
 
