@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-While National Cheng Kung University publishes its donation records online [成大捐款芳名錄](https://donate.ncku.edu.tw/p/412-1055-2043.php?Lang=zh-tw), the official webpage is presented in a long list, making it difficult for users to browse or analyze the data effectively.
+While National Cheng Kung University publishes its donation records [成大捐款芳名錄](https://donate.ncku.edu.tw/p/412-1055-2043.php?Lang=zh-tw), the official webpage is presented in a long list, making it difficult for users to browse or analyze the data effectively.
 
 To solve this, I built:
 
