@@ -23,21 +23,21 @@ def show_unit_total(df):
     target = df[df["purpose"].str.contains(unit, na=False)]
     target = clean_amount(target)
     total = target["amount"].sum()
-    print(f"\n📊 {unit} 今年收到的總捐款金額為：{total:,.0f} 元\n")
+    print(f"\n{unit} 今年收到的總捐款金額為：{total:,.0f} 元\n")
 
 def show_donor_total(df):
     name = questionary.text("請輸入你想查詢的捐款人").ask()
     target = df[df["donor"].str.contains(name, na=False)]
     target = clean_amount(target)
     total = target["amount"].sum()
-    print(f"\n🙋 {name} 今年總共捐款：{total:,.0f} 元\n")
+    print(f"\n{name} 今年總共捐款：{total:,.0f} 元\n")
 
 def show_donors_to_unit(df):
     unit = questionary.text("請輸入單位名稱").ask()
     target = df[df["purpose"].str.contains(unit, na=False)]
     target = clean_amount(target)
     group = target.groupby("donor")["amount"].sum()
-    print(f"\n🧾 {unit} 今年收到的捐款來源與金額：")
+    print(f"\n{unit} 今年收到的捐款來源與金額：")
     print(group.sort_values(ascending=False).to_string())
     print()
 
