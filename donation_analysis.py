@@ -6,9 +6,9 @@ import questionary
 def load_data(year):
     path = f"data/{year}donations.csv"
     if not os.path.exists(path):
-        print(f"❌ 檔案 {path} 不存在！請先執行爬蟲。")
+        print(f" 檔案 {path} 不存在！請先執行爬蟲。")
         return None
-    return pd.read_csv(path)  # ❗️ 不預先處理 amount，避免炸掉
+    return pd.read_csv(path)  # 不預先處理 amount，避免炸掉
 
 # 共用金額清理函數
 def clean_amount(df):
